@@ -9,7 +9,7 @@
   }
   
   .frame{
-    position: relative;
+    position: absolute;
     width: 500px;
     height: 500px;
     border: 1px solid black;
@@ -18,7 +18,7 @@
   .cafetera{
     border: 2px solid rgb(238, 119, 69);
     position: absolute;
-    width: 190px;
+    width: 202px;
     height: 165px;
     bottom: 230px;
     right: 149px;
@@ -28,26 +28,50 @@
     z-index: 10;
   }
 
+  .topblack{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 186px;
+    right: 87px;
+    border-radius: 10px;
+    transform: perspective(14px) rotateX(-13deg);
+    background: rgb(57, 59, 63);
+  }
+  
   .bottom{
-    position: relative;
+    position: absolute;
     width: 170px;
-    height: 45px;
-    right: 150px;
+    height: 43px;
     top: 258px;
-    left: 34%;
+    left: 165px;
     border-radius: 7px;
     background-color: #e76117;
+    z-index: 2
   }
   
   .lid{
-    position: relative; 
-    top: 50px; 
-    left: 51%; 
+    position: absolute; 
+    top: 87px; 
+    left: 248px; 
     transform: translate(-50%, -50%); 
-    height: 70px; 
+    height: 50px; 
     width: 200px; 
     border-radius: 100px 100px 0 0; 
     background-color: #e76117; 
+  }
+  
+  .metalbottom{
+    border: 2px solid rgb(214, 215, 198);
+    position: absolute;
+    width: 187px;
+    height: 165px;
+    top: 279px;
+    left: 155px;
+    border-radius: 25px 25px 20px 20px;
+    transform: perspective(10px) rotateX(1deg);
+    background: rgb(133, 139, 135);
+    z-index: 1
   }
   
   .bustello{
@@ -189,7 +213,10 @@
     <div class="stripes2"></div>
     <div class="handle"></div>
  </div>
-    <div class="cafetera"></div>
+    <div class="cafetera">
+      <div class="topblack"></div>
+  </div>
       <div class="bottom"></div>
       <div class="lid"></div>
+      <div class="metalbottom"></div>
 </div>
