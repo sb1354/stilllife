@@ -28,6 +28,19 @@
     z-index: 10;
   }
 
+  .block{
+    position: absolute;
+    clip-path: polygon(11% 5%, 47% 1%, 100% 3%, 100% 85%, 51% 93%, 12% 85%);
+    background: black;
+    right: 10px;
+  }
+  
+    
+  .blackhandle{
+    
+  }
+  
+
   .topblack{
     position: absolute;
     width: 30px;
@@ -86,7 +99,34 @@
   .left-can{
     position: absolute;
     top: 180px;
-    left: 70px;
+    left: 81px;
+  }
+  
+  .label{
+    position: absolute;
+    background-color: rgb(251, 249, 239);
+    width: 50px;
+    height: 79px;
+    top: 139px;
+    left: 39px;
+  }
+  
+  .redlabel{
+    position: absolute;
+    width: 60px;
+    height: 79px;
+    top: 105px;
+    left: 30px;
+    border: 1px solid rgb(208, 70, 11);
+  }
+  
+  .redlabel2{
+    position: absolute;
+    width: 60px;
+    height: 93px;
+    top: 10px;
+    left: 30px;
+    border: 1px solid rgb(208, 70, 11);
   }
   
   .right-can{
@@ -104,6 +144,16 @@
     bottom: 3%;
   }
   
+  .yellowlid{
+    position: absolute;
+    background-color: rgb(231, 214, 0);
+    width: 185px;
+    left: -4px;
+    height: 15px;
+    top: -2px;
+    border: 1px solid rgb(249, 250, 140);
+    border-radius: 6px;
+  }
   
   .cup{
     border: 1px solid rgb(195, 186, 158);
@@ -176,7 +226,6 @@
     width: 15px;
     height: 60px;
     background-color: white;
-    box-shadow: 1px 10px 10px 0px rgb(159, 156, 141);
     position: absolute;
     left: 20%;
     bottom: 10%;
@@ -191,11 +240,15 @@
 
 <div class="frame">
   <div class="bustello left-can">
+  <div class="redlabel"></div>
+  <div class="redlabel2"></div>
   <div class="red"></div>
   <div class="label"></div>
+  <div class="yellowlid"></div>
   </div>
   <div class="bustello right-can">
   <div class="red"></div>
+  <div class="yellowlid"></div>
   </div>
   <div class="cup top-cup">
     <div class="triangle">
@@ -215,6 +268,8 @@
  </div>
     <div class="cafetera">
       <div class="topblack"></div>
+      <div class="block"></div>
+      <div class="blackhandle"></div>
   </div>
       <div class="bottom"></div>
       <div class="lid"></div>
