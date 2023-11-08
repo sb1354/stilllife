@@ -15,6 +15,14 @@
     border: 1px solid black;
   }
   
+  .background{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top: 299px;
+    background: rgb(226, 226, 218);
+  }
+  
   .cafetera{
     border: 2px solid rgb(238, 119, 69);
     position: absolute;
@@ -30,14 +38,35 @@
 
   .block{
     position: absolute;
-    clip-path: polygon(11% 5%, 47% 1%, 100% 3%, 100% 85%, 51% 93%, 12% 85%);
-    background: black;
-    right: 10px;
+    width: 24px;
+    height: 35px;
+    top: -10px;
+    left: 24px;
+    border: 1px solid rgb(238, 119, 69);
+    background-color: #e76117;
+    clip-path: polygon(0 0, 60% 0, 70% 100%, 9% 100%);
   }
   
+  .secondblock{
+    position: absolute;
+	  width: 20px;
+ 	  height: 37px;
+	  transform: skew(2deg);
+    left: 39px;
+    top: -11px;
+    border: 1px solid rgb(238, 119, 69);
+    background-color: #e76117;
+  }
     
   .blackhandle{
-    
+    position: absolute;
+    width: 153px;
+    height: 193px;
+    bottom: -22px;
+    right: 142px;
+    background-color: rgb(68, 63, 65);
+    border-radius: 22px;
+    clip-path: polygon(61% 4%, 74% 0, 88% 0, 88% 15%, 79% 15%, 63% 28%, 53% 51%, 49% 69%, 50% 87%, 49% 100%, 26% 100%, 21% 94%, 24% 63%, 32% 41%, 45% 19%); 
   }
   
 
@@ -239,6 +268,8 @@
 
 
 <div class="frame">
+  <div class="background">
+  </div>
   <div class="bustello left-can">
   <div class="redlabel"></div>
   <div class="redlabel2"></div>
@@ -270,6 +301,7 @@
       <div class="topblack"></div>
       <div class="block"></div>
       <div class="blackhandle"></div>
+      <div class="secondblock"></div>
   </div>
       <div class="bottom"></div>
       <div class="lid"></div>
